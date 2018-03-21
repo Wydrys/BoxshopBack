@@ -23,6 +23,8 @@ public class ProductService {
         productModel.setName(product.getName());
         productModel.setCategory(product.getCategory());
         productModel.setPrice(product.getPrice());
+        productModel.setSize(product.getSize());
+        productModel.setColor(product.getColor());
         ProductModel saved = productDao.save(productModel);
         return saved.getProductId();
     }
@@ -38,6 +40,8 @@ public class ProductService {
             product.setName(pm.getName());
             product.setPrice(pm.getPrice());
             product.setProductId(pm.getProductId());
+            product.setColor(pm.getColor());
+            product.setSize(pm.getSize());
 
             products.add(product);
 

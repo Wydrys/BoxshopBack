@@ -17,6 +17,10 @@ public class ProductModel {
     private String category;
     @Column
     private String name;
+    @Column
+    private String size;
+    @Column
+    private String color;
 
 
     public ProductModel() {
@@ -52,5 +56,21 @@ public class ProductModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
