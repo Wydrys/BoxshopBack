@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @SpringBootApplication
 public class Application {
@@ -29,5 +30,15 @@ public class Application {
 
         };
     }
+/*
+    @Bean(name = "dataSource")
+    public DriverManagerDataSource dataSource() {
+        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
+        driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/sda");
+        driverManagerDataSource.setUsername("root");
+        driverManagerDataSource.setPassword("karolm22");
+        return driverManagerDataSource;
+    }*/
 
 }
